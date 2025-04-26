@@ -1,0 +1,10 @@
+CC=gcc
+CFLAGS=-Wall
+
+all: oled_control
+
+oled_control: oled_control.c
+	$(CC) $(CFLAGS) -o oled_control oled_control.c
+
+clean:
+	rm -f oled_control
